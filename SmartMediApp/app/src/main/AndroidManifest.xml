@@ -10,6 +10,11 @@
         <activity
             android:name=".SplashScreen"
             android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".RegisterScreen_"
+            android:label="@string/title_activity_register_screen"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -17,14 +22,14 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".RegisterScreen_"
-            android:label="@string/title_activity_register_screen"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
-        </activity>
-        <activity
             android:name=".RegistrationVerificationScreen_"
             android:label="@string/title_activity_registration_verification_screen" >
         </activity>
+        <activity
+            android:name=".ProfileInfo_"
+            android:label="@string/title_activity_profile_info" >
+        </activity>
+
     </application>
 
 </manifest>
