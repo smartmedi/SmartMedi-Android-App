@@ -17,7 +17,6 @@
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -25,7 +24,10 @@
             android:name=".RegistrationVerificationScreen_"
             android:label="@string/title_activity_registration_verification_screen" >
         </activity>
-
+        <activity
+            android:name=".ProfileUpdater_"
+            android:label="@string/title_activity_profile_updater" >
+        </activity>
     </application>
 
 </manifest>
