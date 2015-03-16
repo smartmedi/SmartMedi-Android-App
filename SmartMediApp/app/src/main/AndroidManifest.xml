@@ -25,10 +25,6 @@
             android:name=".RegistrationVerificationScreen_"
             android:label="@string/title_activity_registration_verification_screen" >
         </activity>
-        <activity
-            android:name=".ProfileInfo_"
-            android:label="@string/title_activity_profile_info" >
-        </activity>
 
     </application>
 
