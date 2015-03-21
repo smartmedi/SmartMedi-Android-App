@@ -16,6 +16,7 @@ import org.androidannotations.annotations.EActivity;
 import org.androidannotations.annotations.ViewById;
 
 import java.io.IOException;
+import java.lang.reflect.Type;
 
 @EActivity(R.layout.activity_register_screen)
 public class RegisterScreen extends Activity {
@@ -24,13 +25,15 @@ public class RegisterScreen extends Activity {
     EditText mobile_number;
 
     @ViewById
-    TextView move_to_next;
+    TextView move_to_next,logo_title;
 
     @AfterViews
     public void init() {
-        String text=mobile_number.getText().toString();
+
         Typeface font=Typeface.createFromAsset( getAssets(), "fontawesome-webfont.ttf" );
+        Typeface fontforlogo=Typeface.createFromAsset(getAssets(),"GrandHotel-Regular.ttf");
         move_to_next.setTypeface(font);
+        logo_title.setTypeface(fontforlogo);
     }
 
 
