@@ -21,14 +21,19 @@ public class ProfileUpdater extends Activity {
     @ViewById
     RelativeLayout profile_updater;
 
+    @ViewById
+    TextView userIcon ,calenderIcon ;
+
 
     @AfterViews
     public   void init(){
-        Typeface typeface = Typeface.createFromAsset(getAssets(), "fontello.ttf");
+        Typeface typeface = Typeface.createFromAsset(getAssets(), "fontawesome-webfont.ttf");
         LayoutInflater layoutInflater = getLayoutInflater();
         View view = layoutInflater.inflate(R.layout.profile_image_screen, null);
         TextView image_upload= (TextView) view.findViewById(R.id.image_upload);
         image_upload.setTypeface(typeface);
+        userIcon.setTypeface(typeface);
+        calenderIcon.setTypeface(typeface);
         profile_updater.addView(view);
     }
 
