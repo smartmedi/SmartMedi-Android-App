@@ -8,6 +8,9 @@
     <string name="icon_camera">&#xf030;</string>
     <string name="icon_user">&#xf007;</string>
     <string name="icon_calender">&#xf073;</string>
+    <string name="icon_male">&#xf183;</string>
+    <string name="icon_female">&#xf182;</string>
+    <string name="icon_job">&#xf19d;</string>
     <string name="title_activity_registration_verification_screen">RegistrationVerificationScreen
     </string>
     <string name="title_activity_profile_info">ProfileInfo</string>
