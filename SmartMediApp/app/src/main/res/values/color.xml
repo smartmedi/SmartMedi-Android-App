@@ -5,5 +5,7 @@
     <color name="profileBg">#FF3B5998</color>
     <color name="skypeColor">#FF0696CF</color>
     <color name="onButtonPress">#FF30ACDD</color>
+
     <color name="white">#FFFFFFFF</color>
+
 </resources>
