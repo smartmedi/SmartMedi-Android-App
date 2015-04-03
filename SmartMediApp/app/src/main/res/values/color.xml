@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
     <color name="appBg">#FF464648</color>
+    <color name="newBg">#FF304158</color>
     <color name="profileBg">#FF3B5998</color>
     <color name="skypeColor">#FF0696CF</color>
     <color name="onButtonPress">#FF30ACDD</color>
-
+    <color name="white">#FFFFFFFF</color>
 </resources>

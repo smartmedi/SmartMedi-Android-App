@@ -1,6 +1,8 @@
 package smartmedi.org.smartmediapp;
 
 import android.app.Activity;
+import android.graphics.Color;
+import android.graphics.PorterDuff;
 import android.graphics.Typeface;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
@@ -18,16 +20,17 @@ public class RegistrationVerificationScreen extends Activity {
 
 
     @ViewById
-    EditText mobile_number;
+    EditText pin;
 
     @ViewById
-    TextView move_to_next;
-
+    TextView logo_title;
 
     @AfterViews
     public void init(){
         Typeface fonts=Typeface.createFromAsset(getAssets(),"fontawesome-webfont.ttf");
-        move_to_next.setTypeface(fonts);
 
+        pin.getBackground().setColorFilter(Color.WHITE, PorterDuff.Mode.SRC_ATOP);
+        Typeface fontforlogo=Typeface.createFromAsset(getAssets(),"GrandHotel-Regular.ttf");
+        logo_title.setTypeface(fontforlogo);
     }
 }

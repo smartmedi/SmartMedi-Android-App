@@ -19,11 +19,19 @@
         <activity
             android:name=".RegisterScreen_"
             android:label="@string/title_activity_register_screen"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+            android:theme="@style/basetheme" >
         </activity>
         <activity
             android:name=".RegistrationVerificationScreen_"
             android:label="@string/title_activity_registration_verification_screen" >
+        </activity>
+        <activity
+            android:name=".SearchScreen_"
+            android:label="@string/title_activity_search_screen" >
+        </activity>
+        <activity
+            android:name=".PharmacyListScreen"
+            android:label="@string/title_activity_pharmacy_list_screen" >
         </activity>
     </application>
 

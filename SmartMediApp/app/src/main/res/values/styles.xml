@@ -1,8 +1,25 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
         <!-- Customize your theme here. -->
+        <item name="colorControlActivated">@android:color/darker_gray</item>
+        <item name="colorControlHighlight">@android:color/darker_gray</item>
+        <item name="colorPrimaryDark">@color/newBg</item>
+
+    </style>
+    <style name="EditTextStyleWhite" parent="android:style/Widget.EditText">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:background">@android:color/white</item>
+
+    </style>
+
+    <style name="basetheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorControlActivated">@android:color/darker_gray</item>
+        <item name="colorControlHighlight">@android:color/darker_gray</item>
+        <item name="colorPrimaryDark">@color/newBg</item>
+
     </style>
 
 </resources>

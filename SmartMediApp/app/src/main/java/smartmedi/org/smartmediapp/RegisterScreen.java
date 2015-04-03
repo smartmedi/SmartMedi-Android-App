@@ -2,6 +2,8 @@ package smartmedi.org.smartmediapp;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.PorterDuff;
 import android.graphics.Typeface;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
@@ -25,14 +27,17 @@ public class RegisterScreen extends Activity {
     EditText mobile_number;
 
     @ViewById
-    TextView move_to_next,logo_title;
+    TextView  logo_title,registration_icon,move_to_next;
 
     @AfterViews
     public void init() {
 
         Typeface font=Typeface.createFromAsset( getAssets(), "fontawesome-webfont.ttf" );
         Typeface fontforlogo=Typeface.createFromAsset(getAssets(),"GrandHotel-Regular.ttf");
+        /*move_to_next.setTypeface(font);*/
+        registration_icon.setTypeface(font);
         move_to_next.setTypeface(font);
+        mobile_number.getBackground().setColorFilter(Color.WHITE, PorterDuff.Mode.SRC_ATOP);
         logo_title.setTypeface(fontforlogo);
     }
 
