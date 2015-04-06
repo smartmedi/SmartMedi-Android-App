@@ -4,8 +4,8 @@
     <item android:drawable="@drawable/shadow_effect"/>
 
     <item android:id="@+id/shape_circle"
-          android:bottom="6px"
-       >
+        android:bottom="6px"
+        >
         <shape xmlns:android="http://schemas.android.com/apk/res/android"
             android:shape="oval"
             >
@@ -14,6 +14,6 @@
 
             <solid android:color="@android:color/white"/>
         </shape>
-        </item>
+    </item>
 
 </layer-list>
