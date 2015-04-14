@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
-    <color name="appBg">#FF5EA9DD</color>
-    <color name="textColor">#FF5EA9DD</color>
-    <color name="profileBg">#FFB2B2B2</color>
+    <color name="appBg">#FF464648</color>
+    <color name="newBg">#FF304158</color>
+    <color name="profileBg">#FF3B5998</color>
     <color name="skypeColor">#FF0696CF</color>
     <color name="onButtonPress">#FF30ACDD</color>
-    <color name="cameraColor">#FFC3C3C3</color>
-    <color name="white">#ffffff</color>
 
+    <color name="white">#FFFFFFFF</color>
+    <color name="cameraColor">#FFC3C3C3</color>
+   
 </resources>

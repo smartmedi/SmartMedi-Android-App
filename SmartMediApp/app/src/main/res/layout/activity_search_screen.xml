@@ -1,0 +1,186 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="smartmedi.org.smartmediapp.SearchScreen">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/black"
+        android:minHeight="130dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/toolbar"
+        android:background="@color/newBg">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="What do you want to search ?"
+            android:textColor="@android:color/white" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/search_options"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/pharmacy_search_mode"
+            android:layout_marginRight="40dp">
+
+           <RelativeLayout
+               android:layout_width="wrap_content"
+               android:id="@+id/pharmacy_selected"
+               android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/pharmacy_selection"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/shadow_button_for_search" />
+               <TextView
+                   android:id="@+id/pharmacy_icon"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="@string/icon_plussqure"
+                   android:textSize="30dp"
+                   android:textColor="@color/newBg"
+                   android:layout_centerInParent="true"
+                />
+           </RelativeLayout>
+            <TextView
+                android:id="@+id/pharmacy_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="pharmacy"
+                android:textSize="25dp"
+                android:layout_gravity="center_horizontal"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            android:id="@+id/medicine_search_mode">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:id="@+id/medicine_selected"
+                android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/search_selection"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/shadow_button_for_search" />
+                <TextView
+                    android:id="@+id/medicine_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/icon_medikit"
+                    android:textSize="30dp"
+                    android:textColor="@color/newBg"
+                    android:layout_centerInParent="true"
+                    />
+             </RelativeLayout>
+            <TextView
+                android:id="@+id/medicine_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="medicine"
+                android:textSize="25dp"
+                android:layout_gravity="center_horizontal"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:fab="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/search_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/search_options"
+        android:layout_margin="20dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/search_selection"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/location_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/icon_map_marker"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@android:color/black" />
+
+                <Spinner
+                    android:id="@+id/location_selection"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="20dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/medikit_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/icon_medikit"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@android:color/black" />
+
+                <EditText
+                    android:id="@+id/name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:hint="pharmacy or medicine" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <Button
+        android:id="@+id/search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Proceed"
+        android:textColor="@color/white"
+        android:layout_below="@+id/search_card"
+        android:background="@color/newBg"/>
+
+</RelativeLayout>
