@@ -91,6 +91,7 @@
          android:id="@+id/name"
          android:layout_width="0dp"
          android:hint="Name"
+         android:drawableEnd="@drawable/ic_action_edit"
          android:textColor="@color/cameraColor"
          android:layout_height="wrap_content"
          android:layout_weight="0.75"
