@@ -20,6 +20,6 @@
     </style>
 
     <style name="fontAwesome" parent="@android:style/Widget.TextView">
-        <item name="smartmedi.org.smartmediapp:fontName">fontawesome-webfont.ttf</item>
+        <item name="smartmedi.org.smartmediapp:fontAwesome">fontawesome-webfont.ttf</item>
     </style>
 </resources>
