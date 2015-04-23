@@ -22,14 +22,14 @@ public class ProfileUpdater extends Activity {
     RelativeLayout profile_updater;
 
     @ViewById
-    TextView userIcon,maleIcon,image_upload,femaleIcon,jobIcon,calenderIcon ;
+    TextView maleIcon,image_upload,femaleIcon,jobIcon,calenderIcon ;
 
 
     @AfterViews
     public   void init(){
         Typeface typeface = Typeface.createFromAsset(getAssets(), "fontawesome-webfont.ttf");
 
-        userIcon.setTypeface(typeface);
+        //userIcon.setTypeface(typeface);
         image_upload.setTypeface(typeface);
         calenderIcon.setTypeface(typeface);
         maleIcon.setTypeface(typeface);
